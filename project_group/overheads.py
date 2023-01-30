@@ -31,3 +31,4 @@ with fp_report.open(mode='w', encoding='UTF-8', newline='') as filereport:
 # with open(fp_report, 'w') as filereport:
     filereport.write(result)
     filereport.close()
+
