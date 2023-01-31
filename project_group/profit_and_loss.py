@@ -19,7 +19,7 @@ fp_report = Path.cwd()/"summary_report.txt"
     The returned result is then written to a file "summary_report.txt".
 '''
 
-# compute the difference in the net profit between two days in a given csv file 
+# compute the difference in the net profit between two days in the given csv file 
 # and return the result in the form of a string using the 'for-loop'
 def profitloss_function(currency):
     # opening the profit and loss csv file
