@@ -4,12 +4,12 @@
 from pathlib import Path
 import csv
 # csv file and its path
-fp = Path.cwd()/"C:\PFB\project_group\csv_reports\profit-and-loss-usd.csv"
+fp = Path.cwd()/"C:\PFB\poppin_TC04_PFB\csv_reports\profit-and-loss-usd.csv"
 fp_report = Path.cwd()/"summary_report.txt"
 
 '''
     This function reads in a CSV file containing data on net profit for each day. 
-    The CSV file is located at "C:\PFB\project_group\csv_reports\profit-and-loss-usd.csv".
+    The CSV file is located at "C:\PFB\poppin_TC04_PFB\csv_reports\profit-and-loss-usd.csv".
     The function checks if the net profit on each day is higher than that of the previous day.
     If the net profit on a day is lower, the day and the difference in net profit from the previous day are 
     recorded and stored in two separate lists.
