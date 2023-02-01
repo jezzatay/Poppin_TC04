@@ -25,7 +25,7 @@ fp_report = Path.cwd()/"summary_report.txt"
 def profitloss_function(currency):
 
     # opening the profit and loss csv file
-    with open(r"C:\PFB\project_group\csv_reports\profit-and-loss-usd.csv", "r") as file:
+    with open(r"C:\PFB\poppin_TC04_PFB\csv_reports\profit-and-loss-usd.csv", "r") as file:
         reader = csv.reader(file)
         for item in reader:
             next(reader)
