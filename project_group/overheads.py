@@ -47,8 +47,9 @@ def overhead_function(currency):
     print(text_return)
     file.close()
 
-
-
-
-    
+# Write the result string to the file located at path 'fp_report' in write mode then closing the file.
+result = overhead_function(currency = 1)
+with fp_report.open(mode='w', encoding='UTF-8', newline='') as filereport:
+    filereport.write(result)
+    filereport.close()
     
