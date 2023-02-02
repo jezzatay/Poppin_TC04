@@ -1,16 +1,16 @@
-# importng the csv and paths to work with the csv files and to manage file paths
-# the file path for 'overheads-day-90.csv' is stored in the 'fp' variable and 
-# 'summary_report.txt' is stored in the fp_report' variable
+# imports csv and paths to work together with the csv files while managing file paths
+# file path for 'overheads-day-90.csv' is stored in 'fp' variable
+# whereas 'summary_report.txt' is stored in 'fp_report' variable
 from pathlib import Path
 import csv
 fp = Path.cwd()/"C:\PFB\poppin_TC04_PFB\csv_reports\overheads-day-90.csv"
 fp_report = Path.cwd()/"summary_report.txt"
 
 '''
-This funcitons calculates the highest overhead category from the csv file 'overheads-day-90.csv'
+this function calculates the highest overhead category from the csv file 'overheads-day-90.csv'
 it reads the data from the file and loops through each row to find the category with the highest overhead
-value. The highest overhead category and its value are then stored in the variables 'highest_category' 
-and 'highest-overhead' respectively. 
+value - the highest overhead category and its value are then stored in the variables 'highest_category' 
+and 'highest-overhead' respectively
 '''
 
 def overhead_function(currency):
