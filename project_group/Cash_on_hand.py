@@ -70,7 +70,7 @@ def coh_function(currency):
 # Call the coh_function and store the result in a variable
 result = coh_function(currency = 1)
 
-# Opening the report file for appending and writing the result to the file, then finally closing the file.
-with open(fp_report, 'a') as filereport:
-    filereport.write(result)
-    filereport.close()
+
+
+    
+    
