@@ -67,7 +67,7 @@ def coh_function(currency):
     file.close()
 
 
-# 
+# Call the coh_function and storing the result in a variable afterwards
 result = coh_function(currency = 1)
 
 # Opening the report file for appending and writing the result to the file, then finally closing the file.
