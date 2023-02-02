@@ -16,18 +16,18 @@ and 'highest-overhead' respectively
 
 def overhead_function(currency):
 
-    # Opening the file located at path 'fp' in read mode, and storing the file object in variable 'file'
+    # opens file located at path 'fp' in read mode and stores the file object in variable 'file'
     with fp.open(mode='r', encoding='UTF-8', newline='') as file:
-        # Create a csv reader object from the file object
+        # creates a csv reader object from the file object
         reader = csv.reader(file)
-        # Skip header
+        # skip header
         next(reader) 
 
-        # Initialising the variables for 'highest_category' and 'highest_overhead'
+        # initialising the variables for 'highest_category' and 'highest_overhead'
         highest_category = ''
         highest_overhead = 0.00
 
-        # Looping through each for in the file
+        # looping through each for in the file
         for row in reader:
 
             # If the overhead value in the current row is greater than the current highest overhead, it will
