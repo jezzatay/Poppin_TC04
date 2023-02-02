@@ -39,14 +39,12 @@ def coh_function(currency):
             day.append(row[0])
             cash.append(float[row[1]])
 
-            # Looping through the cash list in revers to check if the cash for each day is greater
-            # than the previous day
-            for i in range(len(cash)-1, 0, -1):
-                if cash[i-1] > cash[i]:
-                    day_deficit.append(row[0])
-                    cash_deficit.append(cash[i-1] - float(row[1]))
+            # loops through cash list in reverse to check if cash for each day is greater than the previous
+            for i in range(len(cash)-1, 0, -1:
+                           day_deficit.append(row[0])
+                           cash_deficit.append(cash[i-1] - float(row[1]))
 
-    # Calculate the number of deficit days
+    # calculates the number of deficit days
     deficit_count = len(day_deficit)
 
     # if the deficit count equals to 0, the text_return will be
