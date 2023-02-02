@@ -17,7 +17,7 @@ and '[CASH DEFICIT] DAY <day>, AMOUNT: USD<amount>' in the format (int(day_defic
 '''
 def coh_function(currency):
 
-    # opening the CSV file to read
+    # opening the CSV file to read 
     with fp.open(mode='r', encoding='UTF-8', newline='') as file:
         reader = csv.reader(file)
         for item in reader:
