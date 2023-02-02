@@ -46,7 +46,7 @@ def coh_function(currency):
                     day_deficit.append(row[0])
                     cash_deficit.append(cash[i-1] - float(row[1]))
 
-    # Calculate the number of deficit days
+    # 
     deficit_count = len(day_deficit)
 
     # if the deficit count equals to 0, the text_return will be
@@ -67,7 +67,7 @@ def coh_function(currency):
     file.close()
 
 
-# Calling the coh_function and store the result in a variable
+# 
 result = coh_function(currency = 1)
 
 # Opening the report file for appending and writing the result to the file, then finally closing the file.
