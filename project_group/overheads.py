@@ -21,7 +21,7 @@ def overhead_function(currency):
         # creates a csv reader object from the file object
         reader = csv.reader(file)
         # skip header
-        next(reader) 
+        next(reader)
 
         # initialising the variables for 'highest_category' and 'highest_overhead'
         highest_category = ''
