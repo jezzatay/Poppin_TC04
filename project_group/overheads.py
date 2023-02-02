@@ -23,11 +23,11 @@ def overhead_function(currency):
         # skip header
         next(reader)
 
-        # initialising the variables for 'highest_category' and 'highest_overhead'
+        # initialising the variables for 'highest_catgeory' and 'highest_overhead'
         highest_category = ''
         highest_overhead = 0.00
 
-        # looping through each for in the file
+        # looping through each for in the file 
         for row in reader:
 
             # If the overhead value in the current row is greater than the current highest overhead, it will
