@@ -69,14 +69,17 @@ def profitloss_function(currency):
         while a < deficit_count:
            text_return = text_return + '[PROFIT DEFICIT] DAY: {:.1f}, AMOUNT: USD{:.0f}\n'.format(int(day_deficit[1]),profits_deficit[a]*currency)
 
+# returning text_return
+    return text_return
 
+# calling the function 'profitloss_function' with the variable 'currency' set to 1. It stores the
+# returned value in the variable 'result'
+# it then opens the file in append mode and writes the value of 'result' to it then finally closing the file.
+result = profitloss_function(currency = 1)
+with open(fp_report, 'a') as filereport:
+    filereport.write(result)
+    filereport.close()
     
-
-
-
-
-
-
     
     
 
