@@ -31,7 +31,7 @@ def profitloss_function(currency):
             next(reader)
             print (item)
 
-            # assigning empty lists to store which day, its profits, the day deficit,
+            # assign empty lists to store which day, its profits, the day deficit,
             # and the profits deficit. 
             day = []
             profit = []
@@ -40,7 +40,7 @@ def profitloss_function(currency):
             # to store the output message
             text_return = ''
 
-        # this calculated the profits, 'day' is being append to 'row[0]' 
+        # this calculates the profits, 'day' is being append to 'row[0]' 
         # and the profit is being converted to a float and appended to 'row[1]'
         for count, row in enumerate(reader):
             day.append(row[0])
