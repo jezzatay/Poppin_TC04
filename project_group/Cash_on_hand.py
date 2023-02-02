@@ -17,14 +17,14 @@ and '[CASH DEFICIT] DAY <day>, AMOUNT: USD<amount>' in the format (int(day_defic
 '''
 def coh_function(currency):
 
-    # opening the CSV file to read 
+    # open the CSV file to read 
     with fp.open(mode='r', encoding='UTF-8', newline='') as file:
         reader = csv.reader(file)
         for item in reader:
             # skip the header
             next(reader)
 
-        # creating lists to store the days, cash, days deficit, cash defficit and count to the total record.
+        # create lists to store the days, cash, days deficit, cash defficit and count to the total record.
             day = []
             cash = []
             day_deficit = []
