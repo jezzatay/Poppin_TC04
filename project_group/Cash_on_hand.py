@@ -46,7 +46,7 @@ def coh_function(currency):
                     day_deficit.append(row[0])
                     cash_deficit.append(cash[i-1] - float(row[1]))
 
-    # 
+    # To derive the number of deficit 
     deficit_count = len(day_deficit)
 
     # if the deficit count equals to 0, the text_return will be
