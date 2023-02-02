@@ -46,8 +46,8 @@ def coh_function(currency):
                     day_deficit.append(row[0])
                     cash_deficit.append(cash[i-1] - float(row[1]))
 
-    # To derive the number of deficit 
-    deficit_count = len(day_deficit)
+    
+    
 
     # if the deficit count equals to 0, the text_return will be
     # '[CASH SURPLUS] CASH ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY'
@@ -67,8 +67,8 @@ def coh_function(currency):
     file.close()
 
 
-# Call the coh_function and storing the result in a variable afterwards
-result = coh_function(currency = 1)
+
+
 
 # Opening the report file for appending and writing the result to the file, then finally closing the file.
 with open(fp_report, 'a') as filereport:
